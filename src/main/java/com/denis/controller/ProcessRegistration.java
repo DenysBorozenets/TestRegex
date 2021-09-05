@@ -20,7 +20,11 @@ public class ProcessRegistration {
 
     public void process(){
         noteBook.setFirstName(read(RegexContainer.name, TextConstants.GET_NAME));
+        noteBook.setSecondName(read(RegexContainer.name, TextConstants.GET_SECOND_NAME));
+        noteBook.setMiddleName(read(RegexContainer.name, TextConstants.GET_MIDDLE_NAME));
+
         noteBook.generateFullName();
+
         noteBook.setGroup(groupValidation());
         view.printMessage(Resource.getString(TextConstants.FULL_NAME));
         System.out.println();
