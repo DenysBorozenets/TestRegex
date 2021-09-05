@@ -10,7 +10,7 @@ public abstract class Resource {
     private static final String RESOURCE_BUNDLE_NAME = "messages";
     private static final ResourceBundle resourceBundle = ResourceBundle.getBundle(RESOURCE_BUNDLE_NAME, new Locale(UA));
 
-    public static String getString(String key){
+    public static String getString(String key) {
         return resourceBundle.getString(key);
     }
 }

@@ -16,6 +16,4 @@ public interface RegexContainer {
     String street = "regex.registration.street.regexp";
     String building = "regex.registration.building.regexp";
     String flat = "regex.registration.flat.regexp";
-
-
 }
