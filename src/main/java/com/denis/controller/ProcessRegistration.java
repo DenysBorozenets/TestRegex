@@ -25,7 +25,6 @@ public class ProcessRegistration {
 
         noteBook.generateFullName();
         view.printMessage(Resource.getString(TextConstants.FULL_NAME));
-        System.out.println();
         view.printText(noteBook.getFullName());
 
         noteBook.setNickname(read(RegexContainer.nickname, TextConstants.GET_NICKNAME));
@@ -38,6 +37,16 @@ public class ProcessRegistration {
 
         noteBook.setMail(read(RegexContainer.email, TextConstants.GET_EMAIL));
         noteBook.setSkype(read(RegexContainer.nickname, TextConstants.GET_SKYPE));
+
+        noteBook.setIndex(read(RegexContainer.index, TextConstants.GET_INDEX));
+        noteBook.setCity(read(RegexContainer.city, TextConstants.GET_CITY));
+        noteBook.setStreet(read(RegexContainer.street, TextConstants.GET_STREET));
+        noteBook.setBuilding(read(RegexContainer.building, TextConstants.GET_BUILDING));
+        noteBook.setFlat(read(RegexContainer.flat, TextConstants.GET_FLAT));
+
+        noteBook.generateFullAddress();
+        view.printMessage(Resource.getString(TextConstants.GET_FULL_ADDRESS));
+        view.printText(noteBook.getFullAddress());
     }
 
     private String groupValidation(){

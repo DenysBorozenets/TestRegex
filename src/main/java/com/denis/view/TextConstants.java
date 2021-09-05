@@ -17,5 +17,12 @@ public interface TextConstants {
     String GET_EMAIL = "messages.registration.get.email";
     String GET_SKYPE = "messages.registration.get.skype";
 
+    String GET_INDEX = "messages.registration.get.index";
+    String GET_CITY = "messages.registration.get.city";
+    String GET_STREET = "messages.registration.get.street";
+    String GET_BUILDING = "messages.registration.get.building";
+    String GET_FLAT = "messages.registration.get.flat";
+    String GET_FULL_ADDRESS = "messages.registration.get.fullAddress";
+
     String WRONG_INPUT_DATA = "messages.registration.wrongInput";
 }
