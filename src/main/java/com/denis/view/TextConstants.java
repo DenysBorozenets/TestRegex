@@ -14,5 +14,8 @@ public interface TextConstants {
     String GET_MOBILE_NUMBER = "messages.registration.get.numberMobile";
     String GET_SECOND_MOBILE_NUMBER = "messages.registration.get.secondNumberMobile";
 
+    String GET_EMAIL = "messages.registration.get.email";
+    String GET_SKYPE = "messages.registration.get.skype";
+
     String WRONG_INPUT_DATA = "messages.registration.wrongInput";
 }

@@ -20,45 +20,51 @@ public class NoteBook {
     private String numberMobile;
     private String secondNumberMobile;
 
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+    private String mail;
+    private String skype;
 
     public String getFirstName() {
         return firstName;
     }
 
-    public void setSecondName(String secondName) {
-        this.secondName = secondName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getSecondName() {
         return secondName;
     }
 
-    public void setMiddleName(String middleName) {
-        this.middleName = middleName;
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
     public String getMiddleName() {
         return middleName;
     }
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
     public String getNickname() {
         return nickname;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getComment() {
         return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public Group getGroup() {
+        return group;
     }
 
     public void setGroup(Group group) {
@@ -69,32 +75,44 @@ public class NoteBook {
         setGroup(Group.valueOf(group));
     }
 
-    public Group getGroup() {
-        return group;
+    public String getNumberHome() {
+        return numberHome;
     }
 
     public void setNumberHome(String numberHome) {
         this.numberHome = numberHome;
     }
 
-    public String getNumberHome() {
-        return numberHome;
+    public String getNumberMobile() {
+        return numberMobile;
     }
 
     public void setNumberMobile(String numberMobile) {
         this.numberMobile = numberMobile;
     }
 
-    public String getNumberMobile() {
-        return numberMobile;
+    public String getSecondNumberMobile() {
+        return secondNumberMobile;
     }
 
     public void setSecondNumberMobile(String secondNumberMobile) {
         this.secondNumberMobile = secondNumberMobile;
     }
 
-    public String getSecondNumberMobile() {
-        return secondNumberMobile;
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getSkype() {
+        return skype;
+    }
+
+    public void setSkype(String skype) {
+        this.skype = skype;
     }
 
     public void generateFullName() {

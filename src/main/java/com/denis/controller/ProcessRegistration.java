@@ -35,6 +35,9 @@ public class ProcessRegistration {
         noteBook.setNumberHome(read(RegexContainer.numberHome, TextConstants.GET_HOME_NUMBER));
         noteBook.setNumberMobile(read(RegexContainer.numberMobile, TextConstants.GET_MOBILE_NUMBER));
         noteBook.setSecondNumberMobile(read(RegexContainer.secondNumberMobile, TextConstants.GET_SECOND_MOBILE_NUMBER));
+
+        noteBook.setMail(read(RegexContainer.email, TextConstants.GET_EMAIL));
+        noteBook.setSkype(read(RegexContainer.nickname, TextConstants.GET_SKYPE));
     }
 
     private String groupValidation(){

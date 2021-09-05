@@ -8,4 +8,5 @@ public interface RegexContainer {
     String numberHome = "regex.registration.numberHome.regexp";
     String numberMobile = "regex.registration.numberMobile.regexp";
     String secondNumberMobile = "regex.registration.secondNumberMobile.regexp";
+    String email = "regex.registration.email.regexp";
 }
