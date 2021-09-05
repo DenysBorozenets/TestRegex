@@ -10,9 +10,16 @@ public class NoteBook {
     private String firstName;
     private String secondName;
     private String middleName;
-
-    private Group group;
     private String fullName;
+
+    private String nickname;
+    private String comment;
+    private Group group;
+
+    private String numberHome;
+    private String numberMobile;
+    private String secondNumberMobile;
+
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -38,6 +45,22 @@ public class NoteBook {
         return middleName;
     }
 
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
     public void setGroup(Group group) {
         this.group = group;
     }
@@ -48,6 +71,30 @@ public class NoteBook {
 
     public Group getGroup() {
         return group;
+    }
+
+    public void setNumberHome(String numberHome) {
+        this.numberHome = numberHome;
+    }
+
+    public String getNumberHome() {
+        return numberHome;
+    }
+
+    public void setNumberMobile(String numberMobile) {
+        this.numberMobile = numberMobile;
+    }
+
+    public String getNumberMobile() {
+        return numberMobile;
+    }
+
+    public void setSecondNumberMobile(String secondNumberMobile) {
+        this.secondNumberMobile = secondNumberMobile;
+    }
+
+    public String getSecondNumberMobile() {
+        return secondNumberMobile;
     }
 
     public void generateFullName() {

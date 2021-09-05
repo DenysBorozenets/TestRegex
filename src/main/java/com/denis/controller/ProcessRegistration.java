@@ -24,11 +24,17 @@ public class ProcessRegistration {
         noteBook.setMiddleName(read(RegexContainer.name, TextConstants.GET_MIDDLE_NAME));
 
         noteBook.generateFullName();
-
-        noteBook.setGroup(groupValidation());
         view.printMessage(Resource.getString(TextConstants.FULL_NAME));
         System.out.println();
         view.printText(noteBook.getFullName());
+
+        noteBook.setNickname(read(RegexContainer.nickname, TextConstants.GET_NICKNAME));
+        noteBook.setComment(read(RegexContainer.any, TextConstants.GET_COMMENT));
+        noteBook.setGroup(groupValidation());
+
+        noteBook.setNumberHome(read(RegexContainer.numberHome, TextConstants.GET_HOME_NUMBER));
+        noteBook.setNumberMobile(read(RegexContainer.numberMobile, TextConstants.GET_MOBILE_NUMBER));
+        noteBook.setSecondNumberMobile(read(RegexContainer.secondNumberMobile, TextConstants.GET_SECOND_MOBILE_NUMBER));
     }
 
     private String groupValidation(){
