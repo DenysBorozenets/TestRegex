@@ -1,5 +1,8 @@
 package com.denis.view;
 
+/**
+ * TextConstants
+ */
 public interface TextConstants {
     String GET_NAME = "messages.registration.get.firstName";
     String GET_SECOND_NAME = "messages.registration.get.secondName";

@@ -12,12 +12,21 @@ public class ProcessRegistration {
     public final View view;
     private final Scanner scanner;
 
+    /**
+     *
+     * @param noteBook
+     * @param view
+     * @param scanner
+     */
     public ProcessRegistration(NoteBook noteBook, View view, Scanner scanner) {
         this.noteBook = noteBook;
         this.view = view;
         this.scanner = scanner;
     }
 
+    /**
+     * main method
+     */
     public void process(){
         //enter username data
         noteBook.setFirstName(read(RegexContainer.name, TextConstants.GET_NAME));
@@ -56,6 +65,10 @@ public class ProcessRegistration {
         view.printText(noteBook.getFullAddress());
     }
 
+    /**
+     *
+     * @return group
+     */
     private String groupValidation(){
         String group;
         group = read(RegexContainer.any, TextConstants.GET_Group);
